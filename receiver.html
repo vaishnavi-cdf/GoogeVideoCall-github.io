@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <title>VIDEO-MEET: Receiver</title>
+    <body>
+        <h1 style="text-align:center">VIDEO MEET</h1>
+        <div>
+            <input placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br>
+            <button id ="joinCall" onclick="joinCall()">Join Call</button>
+        </div>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">Video-Off</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+          <!-- Bootstrap and Font Awesome CSS Libraries -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="./receiver.js"></script>
+        
+    </body>
+
+</html>
